@@ -1,5 +1,5 @@
 {
-  "name": "travel",
+  "name": "lession",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -7,11 +7,17 @@
     "declarations": true
   },
   "dependencies": {
+    "dayjs": "^1.8.28",
     "egg": "^2.15.1",
+    "egg-jwt": "^3.1.7",
     "egg-mysql": "^3.0.0",
+    "egg-redis": "^2.4.0",
     "egg-scripts": "^2.11.0",
-    "egg-sequelize": "^6.0.0",
-    "mysql2": "^2.2.5"
+    "egg-sequelize": "^5.2.2",
+    "egg-validate": "^2.0.2",
+    "egg-view-ejs": "^2.0.1",
+    "md5": "^2.3.0",
+    "mysql2": "^2.1.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -26,8 +32,8 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-travel",
-    "stop": "egg-scripts stop --title=egg-server-travel",
+    "start": "egg-scripts start --daemon --title=egg-server-lession",
+    "stop": "egg-scripts stop --title=egg-server-lession",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
