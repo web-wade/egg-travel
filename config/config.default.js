@@ -75,20 +75,20 @@ module.exports = appInfo => {
     app: true,
     agent: false,
     client: {
-      host: '127.0.0.1',
+      host: '172.16.200.7',
       port: '3306',
       user: 'root',
-      password: 'abc123456',
-      database: 'egg'
+      password: '123456',
+      database: 'egg_house'
     }
   };
 
   config.sequelize = {
     dialect: 'mysql',
-    host: '127.0.0.1',
+    host: '172.16.200.7',
     port: '3306',
     user: 'root',
-    password: 'abc123456',
+    password: '123456',
     database: 'egg_house',
     define: {
       timestamps: false,
@@ -103,8 +103,8 @@ module.exports = appInfo => {
   config.redis = {
     client: {
       port: 6379,
-      host: '127.0.0.1',
-      password: 'abc123456',
+      host: '172.16.200.7',
+      password: '123456',
       db: 0
     }
   };
